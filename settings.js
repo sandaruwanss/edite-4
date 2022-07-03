@@ -42,7 +42,7 @@ global.sessionName = 'session' //Session Name!
 global.sp = '⭔' //A Charactor In Menu!
 
 
-global.ig = 'මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය. wa.me/94703290134' //Github Account!
+global.ig = 'https://github.com/sandaruwanss/edite-4' //Github Account!
 global.footer = '©_Sandaruwan.' // DO NOT CHANGE!
 
 global.mess = { // Error Mesages
