@@ -150,7 +150,7 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
 
 ⭐✑ Description: ${metadata.desc}
 
-⭐✑ Welcome To Our Comfortable Happy😋, Sometimes Loud😜, Usually Messy🤥, Full Of Love🥰, HOME😌!!`} )
+⭐✑ Welcome To Our Comfortable Happy😋, \nSometimes Loud😜, \nUsually Messy🤥, \nFull Of Love🥰, \nHOME😌!!`} )
                 } else if (anu.action == 'remove') {
                     RedDragonMdNx.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `⭐✑ @${num.split("@")[0]} Left ${metadata.subject}
 
