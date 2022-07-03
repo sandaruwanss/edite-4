@@ -2112,7 +2112,7 @@ break
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                RedDragonMdNx.sendImage(m.chat, media.thumb, `🙂🔥${botname}\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${isUrl(text)}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '320kbps'}\n\n*ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *DARK-KING-BOT*`, m)
+                RedDragonMdNx.sendImage(m.chat, media.thumb, `🙂🔥${botname}\n\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${isUrl(text)}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '320kbps'}\n\n\n\n*ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *DARK-KING-BOT*`, m)
                 RedDragonMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
@@ -2122,7 +2122,7 @@ break
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                RedDragonMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🙂🔥${botname}\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${isUrl(text)}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '360p'}\n\n*ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *DARK-KING-BOT*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🙂🔥${botname}\n\n\n🔰🌹 Title : ${media.title}\n\n🔰🌹 File Size : ${media.filesizeF}\n\n🔰🌹 Url : ${isUrl(text)}\n\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '360p'}\n\n\n\n*ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *DARK-KING-BOT*` }, { quoted: m })
             }
             break
 	    case 'getmusicxxx': {
@@ -2131,7 +2131,7 @@ break
                 let quality = args[1] ? args[1] : '128kbps'
                 let media = await yta(urls[text - 1], quality)
                 if (media.filesize >= 100000) return reply('File Over Limit '+util.format(media))
-                RedDragonMdNx.sendImage(m.chat, media.thumb, `🌝❤️${botname}\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${urls[text - 1]}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '128kbps'}\n\n*ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *DARK-KING-BOT*`, m)
+                RedDragonMdNx.sendImage(m.chat, media.thumb, `🌝❤️${botname}\n\n\n🔰🌹 Title : ${media.title}\n\n🔰🌹 File Size : ${media.filesizeF}\n\n🔰🌹 Url : ${urls[text - 1]}\n\n🔰🌹 Ext : MP3\n\n🔰🌹 Resolution : ${args[1] || '128kbps'}\n\n\n\n*ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *DARK-KING-BOT*`, m)
                 RedDragonMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
@@ -2145,7 +2145,7 @@ break
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(urls[text - 1], quality)
                 if (media.filesize >= 100000) return reply('File Over Limit '+util.format(media))
-                RedDragonMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🙂🔥-☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${urls[text - 1]}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '360p'}\n\nPOWERD BY:  ${botname}` }, { quoted: m })
+                RedDragonMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🙂🔥-☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n\n\n🔰🌹 Title : ${media.title}\n\n🔰🌹 File Size : ${media.filesizeF}\n\n🔰🌹 Url : ${urls[text - 1]}\n\n🔰🌹 Ext : MP3\n\n🔰🌹 Resolution : ${args[1] || '360p'}\n\n\n\nPOWERD BY:  ${botname}` }, { quoted: m })
             }
             break
             case 'pinterest': {
@@ -2301,7 +2301,7 @@ case 'webtonsearch': case 'webtoon':
                 ]
                 let buttonMessage = {
                     image: { url: result.image[0] },
-                    caption: `🙂🔥-☬DARK༒KING-𝗕𝗢𝗧࿐\n\n🔰🌹 Title : ${result.title}\n🔰🌹 Category : ${result.type}\n🔰🌹 Detail : ${result.source}\n🔰🌹 Media Url : ${result.image[2] || result.image[1] || result.image[0]}`,
+                    caption: `🙂🔥-☬DARK༒KING-𝗕𝗢𝗧࿐\n\n🔰🌹 Title : ${result.title}\n\n🔰🌹 Category : ${result.type}\n\n🔰🌹 Detail : ${result.source}\n\n🔰🌹 Media Url : ${result.image[2] || result.image[1] || result.image[0]}`,
                     footer: RedDragonMdNx.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2319,7 +2319,7 @@ case 'webtonsearch': case 'webtoon':
                 ]
                 let buttonMessage = {
                     image: { url: result.image },
-                    caption: `🙂🔥-☬DARK༒KING-𝗕𝗢𝗧࿐\n\n🔰🌹 Title : ${result.title}\n🔰🌹 Source : ${result.source}\n🔰🌹 Media Url : ${result.image}`,
+                    caption: `🙂🔥-☬DARK༒KING-𝗕𝗢𝗧࿐\n\n🔰🌹 Title : ${result.title}\n\n🔰🌹 Source : ${result.source}\n\n🔰🌹 Media Url : ${result.image}`,
                     footer: RedDragonMdNx.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2367,14 +2367,14 @@ case 'webtonsearch': case 'webtoon':
                 if (!Number(text)) return reply(`Example : ${prefix + command} 916909137213`)
                 let anu = await primbon.nomer_hoki(Number(text))
                 if (anu.status == false) return reply(anu.message)
-                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Phone Number :* ${anu.message.nomer_hp}\n🔰🌹 *Shuzi Angka Figures :* ${anu.message.angka_shuzi}\n🔰🌹 *Positive Energy :*\n- Riches : ${anu.message.energi_positif.kekayaan}\n- Health : ${anu.message.energi_positif.kesehatan}\n- Love : ${anu.message.energi_positif.cinta}\n- Stability : ${anu.message.energi_positif.kestabilan}\n- Percentage : ${anu.message.energi_positif.persentase}\n🔰🌹 *Negative Energy :*\n- Dispute : ${anu.message.energi_negatif.perselisihan}\n- Lost : ${anu.message.energi_negatif.kehilangan}\n- Catastrophe : ${anu.message.energi_negatif.malapetaka}\n- Destruction : ${anu.message.energi_negatif.kehancuran}\n- Percentage : ${anu.message.energi_negatif.persentase}`, m)
+                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Phone Number :* ${anu.message.nomer_hp}\n\n🔰🌹 *Shuzi Angka Figures :* ${anu.message.angka_shuzi}\n\n🔰🌹 *Positive Energy :*\n- Riches : ${anu.message.energi_positif.kekayaan}\n- Health : ${anu.message.energi_positif.kesehatan}\n\n- Love : ${anu.message.energi_positif.cinta}\n\n- Stability : ${anu.message.energi_positif.kestabilan}\n\n- Percentage : ${anu.message.energi_positif.persentase}\n\n🔰🌹 *Negative Energy :*\n- Dispute : ${anu.message.energi_negatif.perselisihan}\n\n- Lost : ${anu.message.energi_negatif.kehilangan}\n\n- Catastrophe : ${anu.message.energi_negatif.malapetaka}\n\n- Destruction : ${anu.message.energi_negatif.kehancuran}\n\n- Percentage : ${anu.message.energi_negatif.persentase}`, m)
             }
             break
             case 'artimimpi': case 'tafsirmimpi': {
                 if (!text) return reply(`Example : ${prefix + command} belanja`)
                 let anu = await primbon.tafsir_mimpi(text)
                 if (anu.status == false) return reply(anu.message)
-                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Dream :* ${anu.message.mimpi}\n🔰🌹 *Meaning :* ${anu.message.arti}\n🔰🌹 *Solution :* ${anu.message.solusi}`, m)
+                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Dream :* ${anu.message.mimpi}\n\n🔰🌹 *Meaning :* ${anu.message.arti}\n\n🔰🌹 *Solution :* ${anu.message.solusi}`, m)
             }
             break
             case 'ramalanjodoh': case 'ramaljodoh': {
@@ -2382,7 +2382,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.ramalan_jodoh(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return reply(anu.message)
-                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Your Name :* ${anu.message.nama_anda.nama}\n🔰🌹 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n🔰🌹 *Couple Name :* ${anu.message.nama_pasangan.nama}\n🔰🌹 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n🔰🌹 *Results :* ${anu.message.result}\n🔰🌹 *Notes :* ${anu.message.catatan}\n\nPOWERD BY:  ${botname}`, m)
+                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Your Name :* ${anu.message.nama_anda.nama}\n\n🔰🌹 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n\n🔰🌹 *Couple Name :* ${anu.message.nama_pasangan.nama}\n\n🔰🌹 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n\n🔰🌹 *Results :* ${anu.message.result}\n\n🔰🌹 *Notes :* ${anu.message.catatan}\n\nPOWERD BY:  ${botname}`, m)
             }
             break
             case 'ramalanjodohbali': case 'ramaljodohbali': {
@@ -2390,7 +2390,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.ramalan_jodoh_bali(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return reply(anu.message)
-                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Your Name :* ${anu.message.nama_anda.nama}\n🔰🌹 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n🔰🌹 *Couple Name :* ${anu.message.nama_pasangan.nama}\n🔰🌹 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n🔰🌹 *Results :* ${anu.message.result}\n🔰🌹 *Notes :* ${anu.message.catatan}\n\nPOWERD BY:  ${botname}`, m)
+                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Your Name :* ${anu.message.nama_anda.nama}\n\n🔰🌹 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n\n🔰🌹 *Couple Name :* ${anu.message.nama_pasangan.nama}\n\n\n🔰🌹 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n\n🔰🌹 *Results :* ${anu.message.result}\n\n🔰🌹 *Notes :* ${anu.message.catatan}\n\nPOWERD BY:  ${botname}`, m)
             }
             break
             case 'suamiistri': {
@@ -2398,7 +2398,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.suami_istri(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return reply(anu.message)
-                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Husband's Name :* ${anu.message.suami.nama}\n🔰🌹 *Husband Born :* ${anu.message.suami.tgl_lahir}\n🔰🌹 *Wife's Name :* ${anu.message.istri.nama}\n🔰🌹 *Born Wife :* ${anu.message.istri.tgl_lahir}\n🔰🌹 *Results :* ${anu.message.result}\n🔰🌹 *Notes :* ${anu.message.catatan}\n\nPOWERD BY:  ${botname}`, m)
+                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Husband's Name :* ${anu.message.suami.nama}\n\n🔰🌹 *Husband Born :* ${anu.message.suami.tgl_lahir}\n\n🔰🌹 *Wife's Name :* ${anu.message.istri.nama}\n\n🔰🌹 *Born Wife :* ${anu.message.istri.tgl_lahir}\n\n🔰🌹 *Results :* ${anu.message.result}\n\n🔰🌹 *Notes :* ${anu.message.catatan}\n\nPOWERD BY:  ${botname}`, m)
             }
             break
             case 'ramalancinta': case 'ramalcinta': {
@@ -2406,14 +2406,14 @@ case 'webtonsearch': case 'webtoon':
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.ramalan_cinta(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return reply(anu.message)
-                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Your Name :* ${anu.message.nama_anda.nama}\n🔰🌹 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n🔰🌹 *Couple Name :* ${anu.message.nama_pasangan.nama}\n🔰🌹 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n🔰🌹 *Positive Side :* ${anu.message.sisi_positif}\n🔰🌹 *Negative Side :* ${anu.message.sisi_negatif}\n🔰🌹 *Notes :* ${anu.message.catatan}\n\nPOWERD BY:  ${botname}`, m)
+                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Your Name :* ${anu.message.nama_anda.nama}\n\n🔰🌹 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n\n🔰🌹 *Couple Name :* ${anu.message.nama_pasangan.nama}\n\n🔰🌹 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n\n🔰🌹 *Positive Side :* ${anu.message.sisi_positif}\n\n🔰🌹 *Negative Side :* ${anu.message.sisi_negatif}\n\n🔰🌹 *Notes :* ${anu.message.catatan}\n\nPOWERD BY:  ${botname}`, m)
             }
             break
             case 'artinama': {
                 if (!text) throw `Example : ${prefix + command} Dika Ardianta`
                 let anu = await primbon.arti_nama(text)
                 if (anu.status == false) return reply(anu.message)
-                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Name :* ${anu.message.nama}\n🔰🌹 *Meaning :* ${anu.message.arti}\n🔰🌹 *Notes :* ${anu.message.catatan}`, m)
+                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Name :* ${anu.message.nama}\n\n🔰🌹 *Meaning :* ${anu.message.arti}\n\n🔰🌹 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'kecocokannama': case 'cocoknama': {
@@ -2421,7 +2421,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama, tgl, bln, thn] = text.split`,`
                 let anu = await primbon.kecocokan_nama(nama, tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Name :* ${anu.message.nama}\n🔰🌹 *Born :* ${anu.message.tgl_lahir}\n🔰🌹 *Life Path :* ${anu.message.life_path}\n🔰🌹 *Destiny :* ${anu.message.destiny}\n🔰🌹 *Destiny Desire :* ${anu.message.destiny_desire}\n🔰🌹 *Personality :* ${anu.message.personality}\n🔰🌹 *Percentage :* ${anu.message.persentase_kecocokan}\n\nPOWERD BY:  ${botname}`, m)
+                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Name :* ${anu.message.nama}\n\n🔰🌹 *Born :* ${anu.message.tgl_lahir}\n\n🔰🌹 *Life Path :* ${anu.message.life_path}\n\n🔰🌹 *Destiny :* ${anu.message.destiny}\n\n🔰🌹 *Destiny Desire :* ${anu.message.destiny_desire}\n\n🔰🌹 *Personality :* ${anu.message.personality}\n\n🔰🌹 *Percentage :* ${anu.message.persentase_kecocokan}\n\nPOWERD BY:  ${botname}`, m)
             }
             break
             case 'kecocokanpasangan': case 'cocokpasangan': case 'pasangan': {
@@ -2429,7 +2429,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama1, nama2] = text.split`|`
                 let anu = await primbon.kecocokan_nama_pasangan(nama1, nama2)
                 if (anu.status == false) return reply(anu.message)
-                RedDragonMdNx.sendImage(m.chat,  anu.message.gambar, `🔰🌹 *Your Name :* ${anu.message.nama_anda}\n🔰🌹 *Couple Name :* ${anu.message.nama_pasangan}\n🔰🌹 *Positive Side :* ${anu.message.sisi_positif}\n🔰🌹 *Negative Side :* ${anu.message.sisi_negatif}`, m)
+                RedDragonMdNx.sendImage(m.chat,  anu.message.gambar, `🔰🌹 *Your Name :* ${anu.message.nama_anda}\n\n🔰🌹 *Couple Name :* ${anu.message.nama_pasangan}\n\n🔰🌹 *Positive Side :* ${anu.message.sisi_positif}\n\n🔰🌹 *Negative Side :* ${anu.message.sisi_negatif}`, m)
             }
             break
             case 'jadianpernikahan': case 'jadiannikah': {
@@ -3258,15 +3258,15 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             break
         //chat bot\\
             case 'ba': case 'බැ': case 'බෑ': case 'බැහැ': {
-                RedDragonMdNx.sendMessage(from, { text: `*බැරි නම් නිකං ඉන්න😏*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `*බැරි නම් නිකං ඉන්න*😏` }, { quoted: m })
             }
             break
-            case 'whoththo': case 'හුත්තෝ': case 'පකය': case 'pakaya': case 'කැරියා': case 'කැම්රි': case 'කැම්රියා': case 'kamriya': case 'humtha': case 'හුත්ති': case 'හුම්ත': case 'හුම්ති': case 'පම්ක': case 'වේසි': case 'වේම්සි': case 'ඇට දෙක': case 'hutti': case 'kari': case 'besikaya': case 'බේසික': case 'පකය': case 'pamka': case 'පොයන්නා': case 'පොන්නයා': case 'පින්නයා': case 'pinnaya': case 'wesi': case 'බඩුව': case 'baduwa': case 'ukkapan': case 'උක්': case 'පයිය': case 'පුක': case 'puka': case 'pumka':{
-                RedDragonMdNx.sendMessage(from, { text: `*කුනුහරුප කියන්න එපා පගෝ😑💔*` }, { quoted: m })
+            case 'whoththo': case 'හුත්තෝ': case 'පකය': case 'pakaya': case 'කැරියා': case 'කැම්රි': case 'කැම්රියා': case 'kamriya': case 'humtha': case 'හුත්ති': case 'හුම්ත': case 'හුම්ති': case 'පම්ක': case 'වේසි': case 'වේම්සි': case 'ඇට දෙක': case 'hutti': case 'kari': case 'besikaya': case 'බේසික': case 'පකය': case 'pamka': case 'පොයන්නා': case 'පොන්නයා': case 'පින්නයා': case 'pinnaya': case 'wesi': case 'බඩුව': case 'baduwa': case 'ukkapan': case 'උක්': case 'පයිය': case 'පුක': case 'puka': case 'පයිය': case 'pumka':{
+                RedDragonMdNx.sendMessage(from, { text: `*කුනුහරුප කියන්න එපා පගෝ*😑💔` }, { quoted: m })
             }
             break
             case 'ado': case 'අඩෝ':{
-                RedDragonMdNx.sendMessage(from, { text: `*මොකෝ ඩෝ🌚*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `*මොකෝ ඩෝ*🌚` }, { quoted: m })
 	    }
             break
 	    case 'bye': case 'බායි': case 'by':{
@@ -3274,67 +3274,67 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
             case 'moko': case 'මොකෝ':{
-                RedDragonMdNx.sendMessage(from, { text: `*ඇයි ඇයි මොකෝ😎*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `*ඇයි ඇයි මොකෝ*😎` }, { quoted: m })
 	 }
             break
             case 'bada': case 'Bada': case 'බෑද':{
-                RedDragonMdNx.sendMessage(from, { text: `*මොනාද බන් උබ ඔය අහන්නෙ 🥱*` }, { quoted: m })	    
+                RedDragonMdNx.sendMessage(from, { text: `*මොනාද බන් උබ ඔය අහන්නෙ *🥱` }, { quoted: m })	    
             }
             break
             case 'bllo': case 'bamla': case 'බල්ලො': case 'බල්ලා': case 'බම්ලො': case 'බම්ලා': {
-                RedDragonMdNx.sendMessage(from, { text: `*එන්නෙපා බල්ල ගාගෙන😒💔💔*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `*එන්නෙපා බල්ල ගාගෙන*😒💔💔` }, { quoted: m })
             }
             break
             case 'හායි': case 'Hi': case 'hi':{
-                RedDragonMdNx.sendMessage(from, { text: `*🥴හූයි😁*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `🥴*හූයි*😁` }, { quoted: m })
             }
             break
             case 'kolukaraya': case 'කොලුකාරයා':{
-                RedDragonMdNx.sendMessage(from, { text: `*ඇයි මේ අපහාස😒*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `*ඇයි මේ අපහාස*😒` }, { quoted: m })
             }
             break
             case 'haminenawane': case 'හැමිනෙනවනෙ':{
-                RedDragonMdNx.sendMessage(from, { text: `*අනේ පලහ්😂*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `*අනේ පලහ්*😂` }, { quoted: m })
             }
             break
             case 'e': case 'ee': case 'ඒ':{
-                RedDragonMdNx.sendMessage(from, { text: `*මොකෝ🌚*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `*මොකෝ*🌚` }, { quoted: m })
             }
             break
             case 'ane': case 'අනෙ': case 'අනේ':{
-                RedDragonMdNx.sendMessage(from, { text: `*මොකෝ අනේ🤭🤭*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `*මොකෝ අනේ*🤭🤭` }, { quoted: m })
             }
             break
             case 'ow': case 'ඔව්': case 'ඕ': case 'oo':{
-                RedDragonMdNx.sendMessage(from, { text: `*එහෙනම් එච්චරයි🤭*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `*එහෙනම් එච්චරයි*🤭` }, { quoted: m })
             }
             break
             case 'halo': case 'hello': case 'haloo': case 'හලො': case 'හලෝ': case 'හලූ':{
-                RedDragonMdNx.sendMessage(from, { text: `*🌝මොකෝ හලෝ🤭*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `🌝*මොකෝ හලෝ*🤭` }, { quoted: m })
             }
             break
             case 'danna': case 'danne na': case 'දන්නෑ': case 'දන්නෙ නෑ':{
-                RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෙත් නෑ☹️*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෙත් නෑ*☹️` }, { quoted: m })
             }
             break
             case 'ko': case 'koo': case 'කෝ': case 'කො':{
-                RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෙත් නෑ☹️*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෙත් නෑ*☹️` }, { quoted: m })
             }
             break
             case 'kamak': case 'kamanna': case 'කමක්': case 'කමන්නෑ':{
-                RedDragonMdNx.sendMessage(from, { text: `*ආ කමක් නෑ...😂👍*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `*ආ කමක් නෑ...*😂👍` }, { quoted: m })
             }
             break
             case 'balamu': case 'balanna': case 'බලමු': case 'බලන්න':{
-                RedDragonMdNx.sendMessage(from, { text: `*බලමුකෝ😂👍*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `*බලමුකෝ*😂👍` }, { quoted: m })
             }
             break
             case 'pala': case 'palayan': case 'පල': case 'පලහ්': case 'පලයන්': case 'පලකො':{
-                RedDragonMdNx.sendMessage(from, { text: `*හා උබ කියනකන් හිටියෙ😒💔*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `*හා උබ කියනකන් හිටියෙ*😒💔` }, { quoted: m })
             }
             break
 	    case 'aththada': case 'ඇත්තද': case 'සිරාද': case 'ඇත්තෙයි': case 'sira': case 'අම්මපා': case 'ඇත්ත':{
-                RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෑ😒*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෑ*😒` }, { quoted: m })
             }
             break
 	    case 'gm': case 'goodmorning': case 'Gm': case 'GM': case 'gummoninm': case 'good morning': case 'goodmorning': case 'GOOD MORNING': case 'Good morning': case 'ගුඩ්මෝනිං': case 'ගුම්මෝනිං': case 'ගුඩ්මෝනිං😌': case 'ගුම්මෝනිං❤️': case 'ගුඩ්මෝනිම්':{
@@ -3342,7 +3342,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
 	    case 'gn': case 'goodnight': case 'gn': case 'Gn': case 'GOOD NIGHT': case 'Good night': case 'GN': case 'gumnight': case 'ගුඩ්නයිට්': case 'ගුම්නයිත්': case 'ගුඩ්නයිට්😌': case 'ගුම්නයිට්❤️': case 'ගුඩ්නයිට්🌚❤️':{
-                RedDragonMdNx.sendMessage(from, { text: `*ලබන්නාවූ රාත්‍රිය😌* \n*හීනෙන් හොල්මන් පෙනෙන,* \n*මහ රෑ දාඩියෙන් තෙමී ඇහැරෙන,* \n*පෙරේතයන් ඇද යටට එන,* \n*කුම්භාණ්ඩයින් ජනෙල් වලින් එබී බලන,* \n*භයානක* \n*රාත්‍රියක්* \n*වේවා* \n*☠️👻👻*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `*ලබන්නාවූ රාත්‍රිය*😌 \n*හීනෙන් හොල්මන් පෙනෙන,* \n*මහ රෑ දාඩියෙන් තෙමී ඇහැරෙන,* \n*පෙරේතයන් ඇද යටට එන,* \n*කුම්භාණ්ඩයින් ජනෙල් වලින් එබී බලන,* \n*භයානක* \n*රාත්‍රියක්* \n*වේවා* \n*☠️👻👻*` }, { quoted: m })
             }
             break
             case '🥰': case '😗': case '😙': case '😘😘': case '😘': case '😍': case 'umma': case '💗':{
@@ -3350,11 +3350,11 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
             case 'බොටා_වැලක්_බලමුද?':{
-                RedDragonMdNx.sendMessage(from, { text: `ම්ම්ම්...බලමු😋\n\n🥵 https://www.pornhub.com/view_video.php?viewkey=ph61acfce1cf358 🥵\n\n🥵 https://www.pornhub.com/view_video.php?viewkey=ph61a3626db0be3 🥵\n\n🥵 https://www.pornhub.com/view_video.php?viewkey=ph61572e2818e7c 🥵\n\n🥵 https://www.pornhub.com/view_video.php?viewkey=ph615b0d4e909d1 🥵` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `ම්ම්ම්...බලමු😋\n\n🥵https://www.pornhub.com/view_video.php?viewkey=ph61acfce1cf358🥵\n\n🥵https://www.pornhub.com/view_video.php?viewkey=ph61a3626db0be3🥵\n\n🥵https://www.pornhub.com/view_video.php?viewkey=ph61572e2818e7c🥵\n\n🥵https://www.pornhub.com/view_video.php?viewkey=ph615b0d4e909d1🥵` }, { quoted: m })
           }
             break
             case 'xxx?': case 'sex': case 'සෙක්ස්':{
-                RedDragonMdNx.sendMessage(from, { text: `ම්ම්ම්...බලමුත 🤫\n\n🥵 https://www.pornhub.com/view_video.php?viewkey=ph61acfce1cf358 🥵\n\n🥵 https://www.pornhub.com/view_video.php?viewkey=ph61a3626db0be3 🥵\n\n🥵 https://www.pornhub.com/view_video.php?viewkey=ph61572e2818e7c 🥵\n\n🥵 https://www.pornhub.com/view_video.php?viewkey=ph615b0d4e909d1 🥵` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `ම්ම්ම්...බලමුත 🤫\n\n🥵https://www.pornhub.com/view_video.php?viewkey=ph61acfce1cf358🥵\n\n🥵https://www.pornhub.com/view_video.php?viewkey=ph61a3626db0be3🥵\n\n🥵https://www.pornhub.com/view_video.php?viewkey=ph61572e2818e7c🥵\n\n🥵https://www.pornhub.com/view_video.php?viewkey=ph615b0d4e909d1🥵` }, { quoted: m })
 	    }
             break
             case 'na': case 'naa': case 'නැ': case 'නෑ': case 'නෑනෙ': case 'nane': case 'naha': case 'නැතෝ':{
@@ -3403,7 +3403,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                         await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `╔●●🔥${botname}\n▌ ╠ Hi, ${pushname} ╣\n╚●●●❖╠ I am Alive👋 ╣\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 :${global.botname}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 :${global.ownername}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 :${global.owner}\n▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds\n▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n${global.alivemsg}\n╗\n${global.namedd}\n❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,unicorn, [{
                             urlButton: {
                             displayText: 'DARK KING Website🔖',
-                            url: '*මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)*'
+                            url: 'මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)'
                             }
                             }, {
                             urlButton: {
@@ -3428,7 +3428,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                             }] )
                             break
 
-                            /*case 'bot': case 'alive': case 'menu': case 'list':{
+                            /*case 'bot': case 'alive': case 'DARK-KING': case 'menu': case 'list':{
                         timestampe = speed();
                         latensie = speed() - timestampe
                             let buttons = [{
@@ -3597,7 +3597,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
             case 'sc': case 'script': {
-                reply(`GitHub : *මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)*\n Dont Forget To Give Star\n\nYouTube : ${btnurl}\nDont Forget To Watch Tutorial`)
+                reply(`GitHub : මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)\n Dont Forget To Give Star\n\nYouTube : ${btnurl}\nDont Forget To Watch Tutorial`)
             }
             break
 
@@ -3930,7 +3930,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}donate
 ┃╠✹🔥 ${prefix}report [bug]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `*මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)*`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 
 case 'grupmenu': case 'groupmenu':
@@ -3960,7 +3960,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}checkvote
 ┃╠✹🔥 ${prefix}delvote
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `*මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)*`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'rpgmenu':
 var unicorn = await getBuffer(picak+'Rpg Menu')
@@ -3978,7 +3978,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}buy [option]
 ┃╠✹🔥 ${prefix}sell [option]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `*මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)*`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 
 case 'funmenu':
@@ -4032,7 +4032,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}math [mode]
 ┃╠✹🔥 ${prefix}suitpvp [tag]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `*මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)*`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'ownermenu':
 var unicorn = await getBuffer(picak+'Owner Menu')
@@ -4061,7 +4061,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}checkvote
 ┃╠✹🔥 ${prefix}delvote
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `*මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)*`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'downloadmenu':
 var unicorn = await getBuffer(picak+'Downloader Menu')
@@ -4077,7 +4077,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}joox [query]
 ┃╠✹🔥 ${prefix}soundcloud [url]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `*මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)*`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'searchmenu':
 var unicorn = await getBuffer(picak+'Search Menu')
@@ -4098,7 +4098,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}webtoon [query]
 ┃╠✹🔥 ${prefix}playstore [query]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `*මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)*`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'randommenu':
 var unicorn = await getBuffer(picak+'Random Menu')
@@ -4110,7 +4110,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}animequote (indo)
 ┃╠✹🔥 ${prefix}couplepp
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `*මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)*`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'randomanimemenu':
 var unicorn = await getBuffer(picak+'Random Anime Menu')
@@ -4146,7 +4146,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}dance
 ┃╠✹🔥 ${prefix}cringe
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `*මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)*`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'textpromenu':
 var unicorn = await getBuffer(picak+'Text Pro Menu')
@@ -4186,7 +4186,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}blackpink [txt]
 ┃╠✹🔥 ${prefix}gluetext [txt]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `*මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)*`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'convertmenu':
 var unicorn = await getBuffer(picak+'Converter Menu')
@@ -4206,7 +4206,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}ebinary [reply txt]
 ┃╠✹🔥 ${prefix}dbinary [reply txt]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `*මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)*`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'databasemenu':
 var unicorn = await getBuffer(picak+'Database Menu')
@@ -4223,7 +4223,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}getmsg
 ┃╠✹🔥 ${prefix}delmsg
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARKKING Website🔖","url": `*මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)*`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARKKING Website🔖","url": `මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'databasemenu':
 var unicorn = await getBuffer(picak+'Database Menu')
@@ -4236,7 +4236,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}next
 ┃╠✹🔥 ${prefix}leave
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `*මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)*`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'islamicmenu':
 var unicorn = await getBuffer(picak+'Islamic Menu')
@@ -4246,7 +4246,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃║	        
 ┃╠✹🔥 ${prefix}juzamma
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `*මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)*`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'voicechangermenu':
 var unicorn = await getBuffer(picak+'Voice Changer Menu')
@@ -4266,7 +4266,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}slow [reply aud]
 ┃╠✹🔥 ${prefix}squirrel [reply aud]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `*මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)*`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'horoscopemenu':
 var unicorn = await getBuffer(picak+'Horoscope Menu')
@@ -4305,7 +4305,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}zodiak (indo)
 ┃╠✹🔥 ${prefix}shio (indo)
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `*මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)*`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'thanksto': case 'tqto': case 'tqtt':
 var unicorn = await getBuffer(picak+'Developer')
@@ -4313,7 +4313,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 Thanks to Me ( NexusNw)
 Alien-Alfa (For helping me to deploy qr in replit and answered my every doubts regard this project)
 DGXeon ( 45% Credits goes to him ,in this script)
-And Again Me (King Nexus 🎉) 🔰🌹 Who Helped Assemble This Sexy Script !!!`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `*මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)*`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+And Again Me (King Nexus 🎉) 🔰🌹 Who Helped Assemble This Sexy Script !!!`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "DARK-KING Website🔖","url": `මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය.(wa.me/94703290134)`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
 break
             default:
                 if (budy.startsWith('=>')) {
