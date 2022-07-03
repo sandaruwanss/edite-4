@@ -20,14 +20,14 @@ global.APIKeys = {
 
 //customize settings\\
 
-global.alivemsg = `My name is DARK-KING🔥
+global.alivemsg = `My name is 🔥 DARK-KING🔥
 My Creator is Sandaruwan😎` //Costomize Alive Message (type your message in `` )
 
 global.owner = ['+94703290134'] //Owner number in aive msg
 global.premium = ['+94703290134'] //Owner Number info
 global.ownernomer = '+94703290134' //Owner Number <<<
 
-global.ownername = '😎Sandaruwan' //Owner Name
+global.ownername = '😎 Sandaruwan 😎' //Owner Name
 global.botname = ' DARK-KING' //Bot Name
 
 global.button = '🤭මේක ටච් කරන්න📍' //Costomize A Button Name In Alive Message
@@ -37,12 +37,12 @@ global.region = 'India, South India, Kerala' //Country Region
 
 global.packname = '☬RED༒DRAGON࿐' //Bot Pacage Name
 global.author = '😎Sandaruwan❯❯' //Author Name
-global.prefa = ['','!','.','😂','❤','💠'] //Command Prefix eg:(.alive ,alive 😂alive)
+global.prefa = ['','!','.','😂','❤','💠'] //Command Prefix eg:(.alive ,alive 😂alive .DARK-KING)
 global.sessionName = 'session' //Session Name!
 global.sp = '⭔' //A Charactor In Menu!
 
 
-global.ig = 'https://github.com/sandaruwanss/DARK-KING' //Github Account!
+global.ig = 'මෙය පෞද්ගලික බොට් කෙනෙකි.සම්පූණ අයිතිය සදරුවන් සතුය. wa.me/94703290134' //Github Account!
 global.footer = '©_Sandaruwan.' // DO NOT CHANGE!
 
 global.mess = { // Error Mesages
@@ -71,7 +71,7 @@ global.mess = { // Error Mesages
    umpanawal: 5,
    potionawal: 1
 }
-global.thumb = fs.readFileSync('./DragonMedia/image/red-_-dragon-kumuthu.jpg')
+global.thumb = fs.readFileSync('./DragonMedia/image/red-_-dragon-Sandaruwan.jpg')
 global.flaming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.fluming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=fluffy-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.flarun = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
