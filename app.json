@@ -6,11 +6,6 @@
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
   "stack": "container",
   "env": {
-    "LANGUAGE": {
-          "description": "Enter your language. To enable Sinhala, type SI. or to enable English, type EN. මෙහි අවශ්‍ය නම් භාශාව වෙනස් කර ගන්න.",
-          "required": true,
-          "value": "si"
-      },
       "WORK_TYPE": {
           "description": "The way the bot works. If you use public, everyone can use the bot. If you use private, only you can use your bot. ඔබගෙ බොට් ඔබට පනක් ක්‍රියා කර විමට අවශ්‍ය නම මෙහි private නැති නම් වෙනස් නොකරන්න.  ",
           "required": true,
