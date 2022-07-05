@@ -6,90 +6,16 @@
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
   "stack": "container",
   "env": {
-      "SUDO": {
-          "description": "If you do not know how to use it, leave it blank! SUDO mode; Your number must be an international number. So you have to have your number after the country code. Example: 947xxxxxxxx (Sri lanka No. 94) ඔබගෙ බොට් වෙනත් WhatsApp අංකයකට ක්‍රියා කර විමට මෙහි එම අංකය යොදන්න.",
-          "required": false
-      },
-      "LANGUAGE": {
+    "LANGUAGE": {
           "description": "Enter your language. To enable Sinhala, type SI. or to enable English, type EN. මෙහි අවශ්‍ය නම් භාශාව වෙනස් කර ගන්න.",
           "required": true,
           "value": "si"
-      },
-      "WELCOME": {
-          "description": "Welcome message type pp or gif යමෙකු group එක තුලට පැමිනි විට යොදන massage එකත් සමග ඔහුගෙ dp එක වැටිමට අවශ්‍ය නම් pp ලෙස යොදන්න, අප විසි ලබාදෙන gif එක අවශ්‍ය නම් gif ලෙස යොදන්න.",
-          "required": true,
-          "value": "gif"
-      },
-      "HANDLERS": {
-          "description": "Do not change ❌ .  bot prefix to use commands. කිසිවක් නොකරන්න.",
-          "required": true,
-          "value": "^[.!#$,*@]"
-      },
-      "ANTIBAD": {
-          "description": "Set True , Activate Anti-Bad word for your groups. අසභ්‍ය වචන කියුවිට group එක තුලින් පන්නා ඩැමිමට අව්ශ්‍ය නම් true ලෙස යොදන්න. ",
-          "required": true,
-          "value": "false"
       },
       "WORK_TYPE": {
           "description": "The way the bot works. If you use public, everyone can use the bot. If you use private, only you can use your bot. ඔබගෙ බොට් ඔබට පනක් ක්‍රියා කර විමට අවශ්‍ය නම මෙහි private නැති නම් වෙනස් නොකරන්න.  ",
           "required": true,
           "value": "public"
-      },       
-      "DEBUG": {
-          "description": "If you do not know this. Give it up. වෙනස් නොකරන්න. ",
-          "required": true,
-          "value": "false"
-      },
-      "WELCOME_LOGO": {
-          "description": "To change the welcome message video, enter your video link below ඔබට welcome logo එකට අවශ්‍ය link එක මෙහි යොදන්න.",
-          "required": true,
-          "value":"https://telegra.ph/file/4ce438f1111969bdd9df1.mp4"
-      },
-      "BYE_LOGO": {
-          "description": "Below is your video link to change Goodbye message video. ඔබට bye logo එක අවශ්‍ය නම මෙහි එහි link එක යොදන්න. ",
-          "required": true,
-          "value":"https://telegra.ph/file/3a2582be8423628a180c0.gif"
-      },
-      "REMOVE_BG_API_KEY": {
-          "description": "Here you go to the website remove.bg and sign up and get an API key. Leave the API key in this space. ඔබගෙ photos වල background ඉවත් කිරිමට අවශ්‍ය නම මෙම api කෙතය නෙහි යොදන්න. ",
-          "required": false
-      },
-      "BAN_MESSAGE": {
-          "description": "The message you get when someone commands you as .ban and removes it. If you do not want to change this message, type default. යම් කිසිවෙමු ඔබගෙ සමුහයෙන් පන්න දාමනවිට පැමිනෙන massage එක වෙනස් කිරිමට අව්ශ්‍ය නම් මෙහි යොදන්න. ",
-          "required": false,
-          "value": "default"
-      },
-      "ADD_MESSAGE": {
-          "description": "If you do not want to change this message, type default. කෙනෙකු ඔබගෙ group එකට add කරන විට ලැබෙන massage එක මෙහි යොදන්න. ",
-          "required": false,
-          "value": "default"
-      },
-      "KICKME_MESSAGE": {
-          "description": "If you do not want to change this message, type default. ඔබ group එකකින් ඉවත් වන විට ලැබෙන massage එක මෙහි යොදන්න. ",
-          "required": false,
-          "value": "default"
-      },
-      "PROMOTE_MESSAGE": {
-          "description": "If you do not want to change this message, type default. admin වරයෙකු පත් කර විට ලැබෙන massage එක මෙහි යොදන්න.",
-          "required": false,
-          "value": "default"
-      },
-      "DEMOTE_MESSAGE": {
-          "description": "If you do not want to change this message, type default.admin වරයෙකු ඉවත් කර විට ලැබෙන massage එක මෙහි යොදන්න. ",
-          "required": false,
-          "value": "default"
-      },
-      "AFK_MESSAGE": {
-          "description": "If you do not want to change this message, type default. ඔබ online නොමැහි විට යොදන massage එක මෙහි යොදන්න.",
-          "required": false,
-          "value": "default"
-
-      },
-      "COFFEEHOUSE_API_KEY": {
-          "description": "Give it up. We give you this. කිසිවක් වෙනස් නොකරන්න. ",
-          "required": false,
-          "value": "true"
-      }
+     }
   },
   "buildpacks": [
     {
