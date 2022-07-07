@@ -83,7 +83,7 @@
 
 </p>
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/108120120/177742718-54cb57d7-25f2-4be6-b2de-f5bf0aa1f737.jpg" width="400" height="300">
+  <img src="https://user-images.githubusercontent.com/108120120/177742718-54cb57d7-25f2-4be6-b2de-f5bf0aa1f737.jpg" width="1112" height="709">
 	<div align="center">
 
 
