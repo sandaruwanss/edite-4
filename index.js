@@ -150,11 +150,11 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
 
 ⭐✑ Description: ${metadata.desc}
 
-⭐✑ Welcome To Our Comfortable Happy😋, Sometimes Loud😜, Usually Messy🤥, Full Of Love🥰, HOME😌!!`} )
+⭐✑ ආ උබත් ආවද 🤨\nඅවුලක් නෑ 😉\nආතල් එකේ ඉමු ඉතින් 🤝`} )
                 } else if (anu.action == 'remove') {
                     RedDragonMdNx.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `⭐✑ @${num.split("@")[0]} Left ${metadata.subject}
 
-⭐✑ I'm Not Sure If It Was A Goodbye Charm, But It Was Fun While It Lasted 😌✨` })
+⭐✑ අපෝ එහෙනම් උබත් ගියා 😓\nඅවුලක් නෑ 😒\nසතුටින් පරිස්සමට හිටපන් 👋` })
                 }
             }
         } catch (err) {
