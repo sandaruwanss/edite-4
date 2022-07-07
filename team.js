@@ -3172,7 +3172,7 @@ View List Of Messages With ${prefix}listmsg`)
             }
             case 'public': {
                 if (!isCreator) return replay(`${mess.owner}`)
-                RedDragonMdNx.public = true
+                RedDragonMdNx.public = false
                 reply('Successful Change To Public Usage')
             }
             break
