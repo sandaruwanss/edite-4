@@ -1356,7 +1356,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                 await RedDragonMdNx.groupAcceptInvite(result).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
             }
             break
-            case 'leave': {
+            case 'left': {
                 if (!isCreator) return replay(`${mess.owner}`)
                 await RedDragonMdNx.groupLeave(m.chat).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
             }
@@ -1723,7 +1723,7 @@ break
                 }
              }
              break
-            case 'linkgroup': case 'linkgc': case 'gclink': case 'grouplink': {
+            case 'linkgroup': case 'linkgc': case 'gclink': case 'grouplink': case 'Group link': {
                 if (!m.isGroup) return replay(`${mess.group}`)
                 let response = await RedDragonMdNx.groupInviteCode(m.chat)
                 RedDragonMdNx.sendText(m.chat, `https://chat.whatsapp.com/${response}\n\n${groupMetadata.subject} Group Link`, m, { detectLink: true })
@@ -1808,7 +1808,7 @@ break
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🔰🌹Owner👤',
+                                    displayText: '👤Owner👤',
                                     id: 'owner'
                                 }
                             }]
@@ -2041,7 +2041,7 @@ break
                 RedDragonMdNx.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
             }
             break
-        case 'google': {
+        case 'google': case 'Google': {
                 if (!text) return reply(`Example : ${prefix + command} gojo shiba inu`)
                 let google = require('google-it')
                 google({'query': text}).then(res => {
@@ -2055,7 +2055,7 @@ break
                 })
                 }
                 break
-        case 'gimage': case 'googleimage': {
+        case 'gimage': case 'googleimage': case 'Google image': {
         if (!text) return reply(`Example : ${prefix + command} gojo`)
         let gis = require('g-i-s')
         gis(text, async (error, result) => {
@@ -2125,7 +2125,7 @@ break
                 RedDragonMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🙂🔥${botname}\n\n\n🔰🌹 Title : ${media.title}\n\n🔰🌹 File Size : ${media.filesizeF}\n\n🔰🌹 Url : ${isUrl(text)}\n\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '360p'}\n\n\n\n*ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *DARK-KING-BOT*` }, { quoted: m })
             }
             break
-	    case 'getmusicxxx': {
+	    case 'getmusicxxx': case 'song': {
                 let { yta } = require('./lib/y2mate')
 		let urls = quoted.text.match(new RegExp(/(?:https?:\/\/)?(?:youtu\.be\/|(?:www\.|m\.)?youtube\.com\/(?:watch|v|embed|shorts)(?:\.php)?(?:\?.*v=|\/))([a-zA-Z0-9\_-]+)/, 'gi'))
                 let quality = args[1] ? args[1] : '128kbps'
@@ -2135,7 +2135,7 @@ break
                 RedDragonMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
-            case 'getvideoxxx': {
+            case 'getvideoxxx': case 'video': {
                 let { ytv } = require('./lib/y2mate')
                 if (!text) throw `Example : ${prefix + command} 1`
                 if (!m.quoted) throw 'Reply Message'
@@ -3412,7 +3412,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                             }                            	
                             }, {
                             quickReplyButton: {
-                            displayText: '❮❮😎Owner👤❯❯',
+                            displayText: '❮❮👤Owner👤❯❯',
                             id: `${prefix}owner`
                             }
                             },{
@@ -3443,7 +3443,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                                 }                            	
                                 }, {
                                 quickReplyButton: {
-                                displayText: '❮❮😎Owner👤❯❯',
+                                displayText: '❮❮👤Owner👤❯❯',
                                 id: `${prefix}owner`
                                 }
                                 },{
@@ -3607,7 +3607,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 case 'allmenu': case 'menuall': {
                
                 let buttons = [
-                    {buttonId: `${prefix}owner`, buttonText: {displayText: '❮❮😎Owner👤❯❯'}, type: 1}]
+                    {buttonId: `${prefix}owner`, buttonText: {displayText: '❮❮👤Owner👤❯❯'}, type: 1}]
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/ypbqxNs/new.jpg'},
                 caption: `🙂-DARK-KING-𝗕𝗢𝗧࿐\n\nHello, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
@@ -3630,7 +3630,7 @@ case 'allmenu': case 'menuall': {
 ┃║
 ┃╠✹🔥 ${prefix}chat [option]
 ┃╠✹🔥 ${prefix}join [link]
-┃╠✹🔥 ${prefix}leave
+┃╠✹🔥 ${prefix}left
 ┃╠✹🔥 ${prefix}block [user]
 ┃╠✹🔥 ${prefix}unblock [user]
 ┃╠✹🔥 ${prefix}bcgroup [text]
